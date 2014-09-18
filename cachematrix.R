@@ -6,6 +6,7 @@
 ## its inverse. It returns a list of set, get, setinverse, getinverse functions.
 
 makeCacheMatrix <- function(x = matrix()) {
+      
       ## initialize the "special" matrix object, inverse
       inverse <- NULL
       
@@ -34,6 +35,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## retrieve the inverse from the cache.
 
 cacheSolve <- function(x, ...) {
+      
       ## retrieve inverse from makeCacheMatrix
       inverse <- x$getinverse()
       
